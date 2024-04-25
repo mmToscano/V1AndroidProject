@@ -1,5 +1,6 @@
 package com.example.v1luciene;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,12 +20,11 @@ public class RegisterScreen extends AppCompatActivity {
         setContentView(R.layout.activity_register_screen);
 
         configureFinishRegisterButton();
-
     }
 
     private void configureFinishRegisterButton(){
-        Button finishRegisterButton = findViewById(R.id.registerButtonFinish);
-        finishRegisterButton.setOnClickListener(new View.OnClickListener() {
+        Button toRegisterPage = findViewById(R.id.registerButtonFinish);
+        toRegisterPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
