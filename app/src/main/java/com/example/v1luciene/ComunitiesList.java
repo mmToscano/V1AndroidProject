@@ -8,6 +8,7 @@ import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -23,6 +24,10 @@ public class ComunitiesList extends AppCompatActivity {
         configureLogOut();
 
     }
+
+
+
+
 
     private void configureLogOut(){
         ImageView toLogOut = findViewById(R.id.logOutComunities);
