@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         configureNextButton();
+        configureComunitiesButton();
 
     }
 
@@ -30,6 +31,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, RegisterScreen.class));
+            }
+        });
+    }
+
+    private void configureComunitiesButton(){
+        Button toEnterButton = findViewById(R.id.enterButton);
+        toEnterButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ComunitiesList.class));
             }
         });
     }
