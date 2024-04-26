@@ -22,7 +22,36 @@ public class ComunitiesList extends AppCompatActivity {
         setContentView(R.layout.activity_comunities_list);
 
         configureLogOut();
+        configureConfigButton();
 
+        ConstraintLayout chat1 = findViewById(R.id.chat1);
+        ConstraintLayout chat2 = findViewById(R.id.chat2);
+        ConstraintLayout chat3 = findViewById(R.id.chat3);
+
+        View.OnClickListener onClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ComunitiesList.this, ChatActivity.class);
+                startActivity(intent);
+            }
+        };
+
+        chat1.setOnClickListener(onClickListener);
+        chat2.setOnClickListener(onClickListener);
+        chat3.setOnClickListener(onClickListener);
+
+
+    }
+
+    private void configureConfigButton(){
+        ImageView configButton = findViewById(R.id.hamburguerButton);
+        configButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ComunitiesList.this, ChatInfo.class));
+
+            }
+        });
     }
 
 

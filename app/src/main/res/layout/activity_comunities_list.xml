@@ -44,7 +44,7 @@
 
             <!-- Right ImageView -->
             <ImageView
-                android:id="@+id/imageView10"
+                android:id="@+id/hamburguerButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
